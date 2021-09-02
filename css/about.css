@@ -218,7 +218,8 @@
     }
 
     .k-background .middle {
-        /*left: 0;*/
+        left: 0;
         top: 0;
+        transform: translateX(-50%);
     }
 }

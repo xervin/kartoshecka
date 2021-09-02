@@ -93,8 +93,12 @@ header .k-title-wrapper h1 {
     line-height: 137px;
     text-align: center;
     text-transform: uppercase;
-    margin: 0 0 0 17px;
+    margin: 0 0 0 22px;
     display: contents;
+}
+
+header .k-title-wrapper h1 span:first-child {
+    margin-left: 22px;
 }
 
 .mobile-close {
@@ -122,6 +126,11 @@ header .k-title-wrapper h1 {
         line-height: 112px;
         margin-top: 20px;
     }
+
+    header .k-title-wrapper h1 span:first-child {
+        margin-left: 0;
+    }
+
     .k-nav {
         position: relative;
         padding: 0;
@@ -172,7 +181,7 @@ header .k-title-wrapper h1 {
         height: 500px;
     }
 
-    .k-button {
+    header .k-button {
         padding-top: 12px;
         width: initial;
         height: initial;
@@ -182,7 +191,7 @@ header .k-title-wrapper h1 {
         transition: initial;
     }
 
-    .k-button:hover {
+    header .k-button:hover {
         color: initial;
         background: initial;
         transition: initial;
@@ -225,5 +234,10 @@ header .k-title-wrapper h1 {
 
     .k-brand {
         width: 35%;
+    }
+
+    header .social {
+        margin-left: 13px;
+        margin-right: -3px;
     }
 }
