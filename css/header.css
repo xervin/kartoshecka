@@ -107,6 +107,8 @@ header .k-title-wrapper h1 span:first-child {
 
 .mobile-social {
     display: none;
+    position: absolute;
+    bottom: 87px;
 }
 
 @media (max-width: 960px) {
