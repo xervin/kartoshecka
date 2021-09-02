@@ -1,0 +1,105 @@
+html, body {
+    width: 100%;
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-size: 18px;
+    line-height: 29px;
+    color: #343434;
+}
+
+.main .k-title-wrapper {
+    height: 105px;
+    padding-top: 5px;
+}
+
+.main .k-title-wrapper h2 {
+    position: relative;
+    font-weight: 800;
+    font-size: 60px;
+    line-height: 73px;
+    text-align: center;
+    margin-left: 17px;
+}
+
+.main .k-title-wrapper h2:after {
+    position: absolute;
+    content: "";
+    bottom: -25px;
+    left: 50%;
+    width: 180px;
+    height: 10px;
+    background: #ECBA46;
+    transform: translateX(-50%);
+}
+
+
+.social-wrapper {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.social {
+    width: 40px;
+    height: 40px;
+    bottom: 94px;
+    border-radius: 100%;
+    background: #E5E5E5;
+    margin-left: 13px;
+    margin-right: -3px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.social img {
+    filter: invert(0.25);
+    transition: 250ms;
+}
+
+.social:hover {
+    cursor: pointer;
+}
+
+.social:hover img {
+    filter: invert(0);
+    transition: 250ms;
+}
+
+.social.vk:hover {
+    background: #5783C6;
+    transition: 250ms;
+}
+
+.social.fb:hover {
+    background: #3A83F1;
+    transition: 250ms;
+}
+
+.social.tw:hover {
+    background: #52D3FC;
+    transition: 250ms;
+}
+
+.social.ig:hover {
+    background: #FF4F79;
+    transition: 250ms;
+}
+
+@media (max-width: 768px) {
+    .main .k-title-wrapper h2 {
+        font-weight: 800;
+        font-size: 40px;
+        line-height: 49px;
+        margin-left: 0;
+    }
+
+    .main .k-title-wrapper h2:after {
+        position: absolute;
+        content: "";
+        bottom: -15px;
+        left: 50%;
+        width: 120px;
+        height: 6px;
+    }
+}

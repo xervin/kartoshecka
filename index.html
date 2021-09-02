@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Картошечка</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <link rel="stylesheet" media="all" href="lib/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" media="all" href="lib/videojs/videojs.css">
+    <script src="lib/jquery-3.6.0.min.js"></script>
+    <script src="lib/bootstrap/js/bootstrap.min.js"></script>
+    <script src="lib/videojs/videojs.js"></script>
+    <script>window.VIDEOJS_NO_DYNAMIC_STYLE = false;</script>
+    <link rel="stylesheet" media="all" href="css/app.css">
+</head>
+<body>
+<header>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-transparent">
+        <div class="container-fluid k-nav">
+            <a class="navbar-brand k-brand" href="/">
+                <img src="img/logo.svg" alt="Картошечка">
+            </a>
+            <button class="navbar-toggler" type="button">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse k-menu" id="navbarNav">
+                <div class="mobile-close">
+                    <img src="img/close.svg">
+                </div>
+                <ul class="navbar-nav">
+                    <li class="nav-item k-nav-item">
+                        <a class="nav-link k-nav-link" href="#price">Цены</a>
+                    </li>
+                    <li class="nav-item k-nav-item">
+                        <a class="nav-link k-nav-link" href="#video">Видео</a>
+                    </li>
+                    <li class="nav-item k-nav-item">
+                        <a class="nav-link k-nav-link" href="#about">О нас</a>
+                    </li>
+                    <li class="nav-item k-nav-item">
+                        <a class="nav-link k-button" href="#request">Оставить заявку</a>
+                    </li>
+                </ul>
+                <div class="container-fluid mobile-social">
+                    <div class="row mobile-menu-title">
+                        <div class="col">
+                            <h3>Картошечка</h3>
+                        </div>
+                    </div>
+                    <div class="row justify-content-center">
+                        <div class="col col-10 social-wrapper">
+                            <div class="social vk">
+                                <a href="#">
+                                    <img src="img/social/vk.svg">
+                                </a>
+                            </div>
+                            <div class="social fb">
+                                <a href="#">
+                                    <img src="img/social/fb.svg">
+                                </a>
+                            </div>
+                            <div class="social tw">
+                                <a href="#">
+                                    <img src="img/social/tw.svg">
+                                </a>
+                            </div>
+                            <div class="social ig">
+                                <a href="#">
+                                    <img src="img/social/ig.svg">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <div class="k-title-wrapper">
+        <h1>
+            <span>Ка</span>
+            <span>рто</span>
+            <span>шеч</span>
+            <span>ка</span>
+        </h1>
+    </div>
+</header>
+<div class="main">
+    <div class="container-fluid price" id="price">
+        <div class="row justify-content-center k-title-wrapper">
+            <div class="col-10">
+                <h2 class="title">Цены</h2>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <div id="k-carousel" class="carousel slide k-carousel" data-bs-ride="carousel"
+                     data-bs-interval="false" data-bs-touch="true">
+                    <div class="carousel-inner">
+                        <div class="carousel-item k-carousel-item active">
+                            <div class="container">
+                                <div class="row k-image-row">
+                                    <div class="col k-carousel-block">
+                                        <img src="img/price/potato_1.png" class="rounded" alt="/">
+                                    </div>
+                                </div>
+                                <div class="row k-name-row">
+                                    <div class="col k-carousel-block">
+                                        <span>Столовый картофель</span>
+                                    </div>
+                                </div>
+                                <div class="row justify-content-center k-price-row">
+                                    <div class="col k-carousel-block">
+                                        <span>142 ₽</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item k-carousel-item">
+                            <div class="container">
+                                <div class="row k-image-row">
+                                    <div class="col k-carousel-block">
+                                        <img src="img/price/potato_2.png" class="rounded" alt="/">
+                                    </div>
+                                </div>
+                                <div class="row k-name-row">
+                                    <div class="col k-carousel-block">
+                                        <span>Деревенский картофель</span>
+                                    </div>
+                                </div>
+                                <div class="row justify-content-center k-price-row">
+                                    <div class="col k-carousel-block">
+                                        <span>129 ₽</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item k-carousel-item">
+                            <div class="container">
+                                <div class="row k-image-row">
+                                    <div class="col k-carousel-block">
+                                        <img src="img/price/potato_3.png" class="rounded" alt="/">
+                                    </div>
+                                </div>
+                                <div class="row k-name-row">
+                                    <div class="col k-carousel-block">
+                                        <span>Домашний картофель</span>
+                                    </div>
+                                </div>
+                                <div class="row justify-content-center k-price-row">
+                                    <div class="col k-carousel-block">
+                                        <span>133 ₽</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#k-carousel"
+                            data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#k-carousel"
+                            data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid video" id="video">
+        <div class="container-fluid k-video-wrapper">
+            <div class="row justify-content-center k-title-wrapper">
+                <div class="col-10">
+                    <h2 class="title">Видео</h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col k-video-player-wrapper">
+                    <video
+                            id="k-player"
+                            class="video-js vjs-default-skin vjs-big-play-centered"
+                            controls
+                            width="770"
+                            height="440"
+                            preload="none"
+                            data-setup='{}'>
+                        <source src="video/potato.mp4" type="video/mp4"></source>
+                        <p class="vjs-no-js">
+                            To view this video please enable JavaScript, and consider upgrading to a
+                            web browser that
+                        </p>
+                    </video>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div class="container-fluid about" id="about">
+        <div class="row k-background">
+            <div class="col col-3 left">
+                <img src="img/about/left.png" alt="/">
+            </div>
+            <div class="col col-6 middle">
+                <img src="img/about/middle.png" alt="/">
+            </div>
+            <div class="col col-3 right">
+                <img src="img/about/right.png" alt="">
+            </div>
+        </div>
+        <div class="row justify-content-center k-title-wrapper">
+            <div class="col-10">
+                <h2 class="title">О нас</h2>
+            </div>
+        </div>
+        <div class="row justify-content-center k-text-row">
+            <div class="col col-4 k-text">
+                <p>Если картошка, запеченная в духовке, получается не всегда такой как хочется (сухая или наоборот
+                    мокрая, сыроватая внутри, недостаточно удачная по специям) — дайте шанс этому рецепту.</p>
+                <p>Такая картошечка по-деревенски стабильно получается очень вкусная, хрустящая снаружи и мягкая, как
+                    пюрешка внутри, ароматная — в общем пальчики оближешь. Рецепт у меня простой, но с технологическим
+                    секретом, который и решает дело.</p>
+            </div>
+        </div>
+        <div class="row justify-content-center k-form-wrapper" id="request">
+            <form class="col-7 justify-content-center k-form">
+                <div class="row">
+                    <div class="col k-form-title">
+                        <h2>Оставить заявку</h2>
+                    </div>
+                </div>
+                <div class="row justify-content-center k-row-name">
+                    <div class="col col-5">
+                        <input type="text" class="form-control" id="name" placeholder="Имя">
+                    </div>
+                </div>
+                <div class="row justify-content-center k-row-phone">
+                    <div class="col col-5">
+                        <input type="tel" class="form-control" id="phone" aria-describedby="phoneHelp"
+                               placeholder="Номер телефона">
+                        <div id="phoneHelp" class="form-text">Номер телефона</div>
+                    </div>
+                </div>
+                <div class="row justify-content-center k-request">
+                    <button type="submit" class="btn btn-primary k-button">Оставить заявку</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+<footer>
+    <div class="container-fluid">
+        <div class="row justify-content-center k-title-row">
+            <div class="col">
+                <h2>Картошечка</h2>
+            </div>
+        </div>
+        <div class="row justify-content-center k-title-row">
+            <div class="col col-10 social-wrapper">
+                <div class="social vk">
+                    <a href="#">
+                        <img src="img/social/vk.svg">
+                    </a>
+                </div>
+                <div class="social fb">
+                    <a href="#">
+                        <img src="img/social/fb.svg">
+                    </a>
+                </div>
+                <div class="social tw">
+                    <a href="#">
+                        <img src="img/social/tw.svg">
+                    </a>
+                </div>
+                <div class="social ig">
+                    <a href="#">
+                        <img src="img/social/ig.svg">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+<script src="js/main.js"></script>
+</body>
+</html>

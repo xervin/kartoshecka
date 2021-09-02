@@ -1,0 +1,229 @@
+header {
+    color: #FFFFFF;
+    width: 100%;
+    height: 900px;
+    background: url("../img/header/backgrround.png") center no-repeat;
+    margin-bottom: 100px;
+}
+
+header nav {
+    position: absolute;
+    width: 100%;
+    height: 150px;
+    z-index: 1;
+}
+
+.k-brand {
+    width: 42%;
+    display: flex;
+    justify-content: center;
+}
+
+.k-brand img {
+    margin-bottom: 12px;
+}
+
+.k-nav-item {
+    height: 52px;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 24px;
+    margin-left: 42px;
+    display: flex;
+    align-items: center;
+}
+
+.k-nav-item a {
+    color: #FFFFFF !important;
+}
+
+.k-nav-item:first-child {
+    margin-left: 120px;
+}
+
+.k-button {
+    width: 240px;
+    height: 50px;
+    border: 1px solid #FFFFFF;
+    border-radius: 130px;
+    padding-top: 12px;
+    text-align: center;
+    transition: 200ms;
+}
+
+.k-button:hover {
+    color: #404040 !important;
+    background: #FFFFFF;
+    transition: 200ms;
+}
+
+.k-nav-link {
+    white-space: nowrap;
+}
+
+.k-nav-link.active {
+    position: relative;
+}
+
+.k-nav-link.active:after {
+    position: absolute;
+    content: "";
+    bottom: 0;
+    left: 50%;
+    width: 80%;
+    height: 4px;
+    background: #ECBA46;
+    transform: translateX(-50%);
+}
+
+header .k-title-wrapper {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 900px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header .k-title-wrapper h1 {
+    font-weight: 900;
+    font-size: 112px;
+    line-height: 137px;
+    text-align: center;
+    text-transform: uppercase;
+    margin: 0 0 0 17px;
+    display: contents;
+}
+
+.mobile-close {
+    display: none;
+}
+
+.mobile-social {
+    display: none;
+}
+
+@media (max-width: 960px) {
+    header {
+        height: 800px;
+        margin-bottom: 46px;
+    }
+    header .k-title-wrapper {
+        height: 800px;
+    }
+    header .k-title-wrapper h1 {
+        display: block;
+        text-align: left;
+        margin-left: 33px;
+        font-weight: 900;
+        font-size: 92px;
+        line-height: 112px;
+        margin-top: 20px;
+    }
+    .k-nav {
+        position: relative;
+        padding: 0;
+    }
+
+    .k-menu {
+        position: absolute;
+        width: 100%;
+        background: #ffffff;
+        color: #343434 !important;
+        top: -30px;
+        height: 100vh;
+        transform: translateY(-100%);
+        transition: 500ms;
+    }
+
+    .navbar-dark .navbar-nav .nav-link {
+        color: #343434 !important;
+    }
+
+    .mobile-social {
+        display: block;
+    }
+
+    .mobile-close {
+        position: absolute;
+        display: block;
+        width: 30px;
+        height: 30px;
+        right: 35px;
+        top: 48px;
+    }
+
+    .k-nav-item a {
+        font-weight: 500;
+        font-size: 30px;
+        line-height: 37px
+    }
+
+    .k-nav-item:first-child,
+    .k-nav-item {
+        margin-left: 60px;
+        margin-bottom: 27px;
+    }
+
+    .navbar-nav {
+        margin-top: 100px;
+        height: 500px;
+    }
+
+    .k-button {
+        padding-top: 12px;
+        width: initial;
+        height: initial;
+        border: initial;
+        border-radius: initial;
+        text-align: initial;
+        transition: initial;
+    }
+
+    .k-button:hover {
+        color: initial;
+        background: initial;
+        transition: initial;
+    }
+
+    .mobile-menu-title h3 {
+        font-style: normal;
+        font-weight: 900;
+        font-size: 30px;
+        line-height: 37px;
+        text-transform: uppercase;
+        padding-right: 22px;
+        padding-top: 3px;
+        text-align: center;
+    }
+
+    header .social-wrapper {
+        justify-content: flex-start;
+    }
+
+    .collapse:not(.show) {
+        display: block;
+    }
+
+    .k-menu.show {
+        transform: translateY(0);
+        transition: 500ms;
+    }
+
+    .navbar-dark .navbar-toggler-icon {
+        background-image: url("../img/menu.svg");
+    }
+
+    .navbar-dark .navbar-toggler {
+        border: none;
+        position: relative;
+        margin-right: 20px;
+        margin-top: -25px;
+    }
+
+    .k-brand {
+        width: 35%;
+    }
+}
